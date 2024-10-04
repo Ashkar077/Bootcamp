@@ -1,8 +1,35 @@
-Problem Statement:
-Many different industries need predictive maintenance solutions to reduce risks and gain actionable insights through processing data from their equipment.
-Although system failure is a very general issue that can occur in any machine, predicting the failure and taking steps to prevent such failure is most important for any machine or software application.
-Predictive maintenance evaluates the condition of equipment by performing online monitoring. The goal is to perform maintenance before the equipment degrades or breaks down.
-This Capstone project is aimed at predicting the machine breakdown by identifying the anomalies in the data.
-The data we have contains about 18000+ rows collected over few days. The column ‘y’ contains the binary labels, with 1 denoting there is an anomaly. The rest of the columns are predictors
+# Predictive Maintenance: Leveraging Anomaly Detection to Prevent Machine Failures
 
-I utilized Random Forest, Gradient Boosting, and Logistic Regression algorithms to train the dataset and generate predictions. Among these models, the Gradient Boosting algorithm demonstrated superior performance, achieving a tuned accuracy of 0.998 and a ROC-AUC score of 0.998.
+## Project Overview
+
+This project develops a predictive maintenance solution aimed at identifying machine anomalies and predicting potential breakdowns. Using a dataset of over 18,000 rows collected over several days, with binary labels indicating anomalies, we've created high-accuracy models capable of predicting machine failures.
+
+## Data Analysis and Preprocessing
+
+- Exploratory Data Analysis (EDA)
+- Data Cleaning (handling missing values, removing duplicates)
+- Outlier Detection and Removal using Local Outlier Factor (LOF)
+- Feature Engineering (creating temporal features)
+
+## Model Development
+
+- Data Preparation (standard scaling, addressing class imbalance with SMOTE)
+- Model Selection and Training
+  - Random Forest
+  - Gradient Boost
+  - Logistic Regression
+- Hyperparameter Tuning
+- Model Evaluation using confusion matrices and AUC-ROC curves
+
+## Results
+
+- Gradient Boost and tuned Random Forest models achieved 0.99 accuracy
+- Logistic Regression model achieved 0.87 accuracy
+
+## Future Work
+
+1. Real-time data integration
+2. Advanced feature engineering
+3. Ensemble methods
+4. Explainable AI techniques
+5. Continuous model updating
